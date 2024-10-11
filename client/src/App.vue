@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <postComponents/>
   </div>
 </template>
@@ -14,4 +14,11 @@ export default {
   }
 }
 </script>
+<style scoped>
+.app{
+  max-width: 1200px;
+  margin:0 auto;
+  background: red;
+}
 
+</style>

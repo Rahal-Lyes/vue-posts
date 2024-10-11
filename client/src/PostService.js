@@ -7,9 +7,10 @@ class PostService {
   static async getPosts() {
     const res = await axios.get(url);
     const data = res.data;
+  
     return data.map((post) => ({
       ...post,
-      createdAt: new Date(post.createdAt),
+      createAt: new Date(post.createAt),
     }));
   }
 
